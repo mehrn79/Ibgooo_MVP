@@ -1,0 +1,44 @@
+
+ 
+ @font-face {
+  font-family: "Vazir-Bold-FD";
+  src: local("Vazir-Bold-FD"),
+    url(~assets/Fonts/Vazir/Vazir-Bold-FD.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vazir-FD";
+  src: local("Vazir-FD"),
+    url(~assets/Fonts/Vazir/Vazir-FD.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vazir-Light-FD";
+  src: local("Vazir-Light-FD"),
+    url(~assets/Fonts/Vazir/Vazir-Light-FD.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vazir-Medium-FD";
+  src: local("Vazir-Medium-FD"),
+    url(~assets/Fonts/Vazir/Vazir-Medium-FD.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Vazir-thin-FD";
+  src: local("Vazir-thin-FD"),
+    url(~assets/Fonts/Vazir/Vazir-Thin-FD.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Samim-FD";
+  src: local("Samim-FD"),
+    url(~assets/Fonts/Samim/Samim-FD.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Samim-Bold-FD";
+  src: local("Samim-Bold-FD"),
+    url(~assets/Fonts/Samim/Samim-Bold-FD.ttf) format("truetype");
+} 
+
+html,body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}

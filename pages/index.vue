@@ -75,7 +75,7 @@ export default {
     sendlocations () {
       setInterval(() => {
         submitLocations(this.locations, 'test_1')
-      }, 6000)
+      }, 60000)
     }
   }
 }

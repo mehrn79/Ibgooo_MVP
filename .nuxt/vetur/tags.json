@@ -1,0 +1,38 @@
+{
+  "Changer": {
+    "description": "Auto imported from components/changer.vue"
+  },
+  "CustomeInput": {
+    "description": "Auto imported from components/customeInput.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/header.vue"
+  },
+  "HeaderRes": {
+    "description": "Auto imported from components/header_res.vue"
+  },
+  "Home": {
+    "description": "Auto imported from components/home.vue"
+  },
+  "ImageContainer": {
+    "description": "Auto imported from components/imageContainer.vue"
+  },
+  "InfoTitle": {
+    "description": "Auto imported from components/infoTitle.vue"
+  },
+  "Map": {
+    "description": "Auto imported from components/map.vue"
+  },
+  "PinInput": {
+    "description": "Auto imported from components/pinInput.vue"
+  },
+  "TripsCard": {
+    "description": "Auto imported from components/trips-card.vue"
+  },
+  "HomePageCard": {
+    "description": "Auto imported from components/home-page/card.vue"
+  },
+  "HomePageHeader": {
+    "description": "Auto imported from components/home-page/header.vue"
+  }
+}

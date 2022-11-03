@@ -36,6 +36,12 @@
             </div>
             <div class="info-item">
               <div class="title">
+                سرعت غیر مجاز
+              </div>
+              <span class="number">11%</span>
+            </div>
+            <div class="info-item">
+              <div class="title">
                 شتاب سریع
               </div>
               <span class="number">2</span>

@@ -29,11 +29,33 @@ export default {
     {
       src: '~/plugins/Leaflet.js',
       ssr: false
+    },
+    {
+      src: '~/plugins/leaflet-ant-path.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/leaflet-wms-header.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/leaflet-draw.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/leaflet-routing-machine.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/vue-persian-datetime-picker.js',
+      mode: 'client'
     }
   ],
 
   build: {
-    vendor: ['Leaflet']
+    vendor: ['leaflet', 'leaflet-wms-header', 'leaflet-ant-path',
+      'leaflet-draw', 'vue-persian-datetime-picker'
+    ]
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components

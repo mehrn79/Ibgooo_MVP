@@ -1,0 +1,72 @@
+[
+  {
+    "name": "test",
+    "path": "/test",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/test.vue",
+    "chunkName": "pages/test",
+    "_name": "_152eed2a"
+  },
+  {
+    "name": "trips",
+    "path": "/trips",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/trips/index.vue",
+    "chunkName": "pages/trips/index",
+    "_name": "_56e1b789"
+  },
+  {
+    "name": "auth-choose",
+    "path": "/auth/choose",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/auth/choose/index.vue",
+    "chunkName": "pages/auth/choose/index",
+    "_name": "_349eb20e"
+  },
+  {
+    "name": "auth-code",
+    "path": "/auth/code",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/auth/code/index.vue",
+    "chunkName": "pages/auth/code/index",
+    "_name": "_5dc1810f"
+  },
+  {
+    "name": "auth-law",
+    "path": "/auth/law",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/auth/law/index.vue",
+    "chunkName": "pages/auth/law/index",
+    "_name": "_51ff1116"
+  },
+  {
+    "name": "auth-phone-number",
+    "path": "/auth/phone-number",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/auth/phone-number/index.vue",
+    "chunkName": "pages/auth/phone-number/index",
+    "_name": "_5a77f22c"
+  },
+  {
+    "name": "auth-sign-in",
+    "path": "/auth/sign-in",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/auth/sign-in/index.vue",
+    "chunkName": "pages/auth/sign-in/index",
+    "_name": "_16876269"
+  },
+  {
+    "name": "auth-tracker-code",
+    "path": "/auth/tracker-code",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/auth/tracker-code/index.vue",
+    "chunkName": "pages/auth/tracker-code/index",
+    "_name": "_1d7cc944"
+  },
+  {
+    "name": "trips-detail",
+    "path": "/trips/detail",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/trips/detail/index.vue",
+    "chunkName": "pages/trips/detail/index",
+    "_name": "_afc06fa6"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/mehran/programing/Ibgooo_MVP/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_acf7192c"
+  }
+]

@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     submit () {
-      this.$router.push('/')
+      this.$router.push({ path: '/', params: { location: 1 } })
     },
     getPhoneNumber (phoneNumber) {
       this.phoneNumber = phoneNumber

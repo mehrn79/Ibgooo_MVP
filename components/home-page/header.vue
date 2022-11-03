@@ -4,30 +4,30 @@
       مهران آدوند
     </h3>
     <div class="button-container">
-      <div class="button">
-        <v-icon class="icon" size="55" color="#0066cc">
-          mdi-chart-box
-        </v-icon>
-        <span class="title">
-          آمار ها
-        </span>
-      </div>
-      <div class="button" @click="$router.push('/trips')">
+      <nuxt-link to="/trips" class="button" @click="$router.push('/trips')">
         <v-icon class="icon" size="55" color="#066cc0">
           mdi-road-variant
         </v-icon>
         <span class="title">
           سفر ها
         </span>
-      </div>
-      <div class="button">
+      </nuxt-link>
+      <nuxt-link to="/" class="button">
+        <v-icon class="icon" size="55" color="#0066cc">
+          mdi-chart-box
+        </v-icon>
+        <span class="title">
+          آمار ها
+        </span>
+      </nuxt-link>
+      <nuxt-link to="/" class="button">
         <v-icon class="icon" size="55" color="#066cc0">
           mdi-steering
         </v-icon>
         <span class="title">
-          بهبود
+          صدور بیمه
         </span>
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -39,6 +39,14 @@ export default {
 </script>
 
 <style scoped>
+     a{
+         text-decoration: none;
+         color: #000;
+     }
+     a:hover {
+         text-decoration:none;
+         cursor:pointer;
+     }
     .header{
         background: url('../../assets/img/home-page-header-bg.png');
         padding: 30px 10px;
@@ -74,6 +82,7 @@ export default {
         text-align: center;
         font-family: "Samim-FD";
         font-weight: 700;
-        font-size: 17px;
+        font-size: 15px;
+        display: block;
     }
 </style>

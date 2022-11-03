@@ -1,8 +1,9 @@
 <template>
   <div>
     <HomePageHeader />
+    <ChangerButton @tripsStatus="(val)=>showMyTrips=val" />
     <v-container dir="rtl" class="rating-body">
-      <v-row>
+      <v-row style="margin-top: 50px;">
         <div class="date-colender">
           <p class="travel-date">
             روز مورد نظر را انتخاب کنید:
@@ -34,323 +35,35 @@
           </v-btn>
         </div>
       </v-row>
-      <v-row>
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>
-              <v-row>
-                <v-col cols="2">
-                  <img class="gps-img" src="~/assets/img/icon_car_geo.svg" alt="car_geo">
-                </v-col>
-                <v-col cols="6">
-                  <p class="travel-title">
-                    سفر چهارشنبه صبح
-                  </p>
-                </v-col>
-                <v-col cols="3">
-                  <v-btn color="#03d682" class="btn" @click="$router.push('/trips/detail')">
-                    جزئیات
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      زمان شروع: 8:00
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      تاریخ شروع: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      زمان پایان: 9:20
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      تاریخ پایان: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>
-              <v-row>
-                <v-col cols="2">
-                  <img class="gps-img" src="~/assets/img/icon_car_geo.svg" alt="car_geo">
-                </v-col>
-                <v-col cols="6">
-                  <p class="travel-title">
-                    سفر چهارشنبه صبح
-                  </p>
-                </v-col>
-                <v-col cols="3">
-                  <v-btn color="#03d682" class="btn" @click="$router.push('/trips/detail')">
-                    جزئیات
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      زمان شروع: 8:00
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      تاریخ شروع: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      زمان پایان: 9:20
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      تاریخ پایان: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col sm="0" md="1" />
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>
-              <v-row>
-                <v-col cols="2">
-                  <img class="gps-img" src="~/assets/img/icon_car_geo.svg" alt="car_geo">
-                </v-col>
-                <v-col cols="6">
-                  <p class="travel-title">
-                    سفر چهارشنبه صبح
-                  </p>
-                </v-col>
-                <v-col cols="3">
-                  <v-btn color="#03d682" class="btn">
-                    جزئیات
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      زمان شروع: 8:00
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      تاریخ شروع: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      زمان پایان: 9:20
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      تاریخ پایان: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>
-              <v-row>
-                <v-col cols="2">
-                  <img class="gps-img" src="~/assets/img/icon_car_geo.svg" alt="car_geo">
-                </v-col>
-                <v-col cols="6">
-                  <p class="travel-title">
-                    سفر چهارشنبه صبح
-                  </p>
-                </v-col>
-                <v-col cols="3">
-                  <v-btn color="#03d682" class="btn">
-                    جزئیات
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      زمان شروع: 8:00
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      تاریخ شروع: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      زمان پایان: 9:20
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      تاریخ پایان: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col sm="0" md="1" />
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>
-              <v-row>
-                <v-col cols="2">
-                  <img class="gps-img" src="~/assets/img/icon_car_geo.svg" alt="car_geo">
-                </v-col>
-                <v-col cols="6">
-                  <p class="travel-title">
-                    سفر چهارشنبه صبح
-                  </p>
-                </v-col>
-                <v-col cols="3">
-                  <v-btn color="#03d682" class="btn">
-                    جزئیات
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      زمان شروع: 8:00
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      تاریخ شروع: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      زمان پایان: 9:20
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      تاریخ پایان: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="5">
-          <v-card>
-            <v-card-title>
-              <v-row>
-                <v-col cols="2">
-                  <img class="gps-img" src="~/assets/img/icon_car_geo.svg" alt="car_geo">
-                </v-col>
-                <v-col cols="6">
-                  <p class="travel-title">
-                    سفر چهارشنبه صبح
-                  </p>
-                </v-col>
-                <v-col cols="3">
-                  <v-btn color="#03d682" class="btn">
-                    جزئیات
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      زمان شروع: 8:00
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#8e269c">
-                      تاریخ شروع: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-                <v-col cols="6">
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      زمان پایان: 9:20
-                    </p>
-                  </v-row>
-                  <v-row>
-                    <p class="travel-title" style="color:#3192c6">
-                      تاریخ پایان: 00/06/17
-                    </p>
-                  </v-row>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
+      <div v-if="showMyTrips">
+        <div v-for="(item,index) in myTrips" :key="index">
+          <TripsCard :is-mobile="false" :trips="item" />
+        </div>
+      </div>
+
+      <div v-for="(item,index2) in trips" v-else :key="index2">
+        <TripsCard :is-mobile="true" :trips="item" @mytrip="addTrips" />
+      </div>
     </v-container>
   </div>
 </template>
 
 <script>
 import HomePageHeader from '~/components/home-page/header.vue'
+import ChangerButton from '~/components/changer.vue'
+import TripsCard from '~/components/trips-card.vue'
 
 export default {
   // middleware: ['check-auth', 'auth'],
   components: {
-    HomePageHeader
+    HomePageHeader,
+    ChangerButton,
+    TripsCard
   },
 
   data () {
     return {
+      showMyTrips: true,
       date: {
         calendar: '1400/06/17'
       },
@@ -358,10 +71,72 @@ export default {
         calendar: false,
         start: false,
         end: false
-      }
+      },
+      trips: [
+        {
+          id: 1,
+          title: 'سفر روز شنبه',
+          startTime: '8:00',
+          endTime: '8:52'
+        },
+        {
+          id: 9,
+          title: 'سفر روز شنبه',
+          startTime: '13:02',
+          endTime: '14:39'
+        },
+        {
+          id: 2,
+          title: 'سفر روز دوشنبه',
+          startTime: '17:45',
+          endTime: '20:00'
+        },
+        {
+          id: 3,
+          title: 'سفر روز چهارشنبه',
+          startTime: '10:00',
+          endTime: '11:00'
+        },
+        {
+          id: 4,
+          title: 'سفر روز چهارشنبه',
+          startTime: '15:05',
+          endTime: '15:58'
+        },
+        {
+          id: 5,
+          title: 'سفر روز پنجشنبه',
+          startTime: '20:07',
+          endTime: '21:00'
+        },
+        {
+          id: 6,
+          title: 'سفر روز جمعه',
+          startTime: '12:00',
+          endTime: '13:40'
+        },
+        {
+          id: 7,
+          title: 'سفر روز جمعه',
+          startTime: '21:30',
+          endTime: '22:00'
+        },
+        {
+          id: 8,
+          title: 'سفر روز شنبه',
+          startTime: '20:00',
+          endTime: '21:00'
+        }
+      ],
+      myTrips: []
+    }
+  },
+  methods: {
+    addTrips (elm) {
+      this.myTrips.push(elm)
+      this.trips.map((item, index) => item.id === elm.id ? this.trips.splice(index, 1) : item)
     }
   }
-
 }
 </script>
 
@@ -375,7 +150,6 @@ export default {
         background: #e1e1e1;
         border-radius: 25px;
         direction: rtl;
-
     }
     .page-title{
         width: 100%;
@@ -400,7 +174,7 @@ export default {
         font-weight: 700;
         line-height: 3;
         text-align: right;
-        color: #000;
+        color: #fff;
         direction: rtl;
         padding: 0 10px;
     }
@@ -449,5 +223,8 @@ export default {
         text-align: right;
         color: #000;
         direction: rtl;
+    }
+    .v-menu{
+      display: block;
     }
 </style>
